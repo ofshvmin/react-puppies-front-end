@@ -9,7 +9,7 @@ const NewPuppy = (props) => {
   const [form, setForm] = useState({
     name: '',
     breed: '',
-    age: 0,
+    age: '',
     color: 'Grey', 
     ears: 'Drop'
   })
