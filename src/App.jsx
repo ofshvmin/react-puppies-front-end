@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 
 // pages
 import Landing from './pages/Landing/Landing'
+import PuppyList from './pages/PuppyList/PuppyList'
 
 // components
 import Nav from './components/Nav'
@@ -29,7 +30,7 @@ const App = () => {
       <Nav />
       <Routes>
         <Route path='/' element={<Landing />} />
-        <Route path='/puppies' element={ <h1>Puppy List</h1> } />
+        <Route path='/puppies' element={ <PuppyList puppies={puppies} /> } />
       </Routes>
       
     </>
