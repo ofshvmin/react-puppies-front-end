@@ -13,7 +13,7 @@ async function create(formData) {
   try {
     const res = await fetch(BASE_URL, {
       method: 'POST',
-      headres: {
+      headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(formData)
